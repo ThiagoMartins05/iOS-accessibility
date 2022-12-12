@@ -10,7 +10,6 @@
 		589175202946CD4B0081739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891751F2946CD4B0081739C /* AppDelegate.swift */; };
 		589175222946CD4B0081739C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175212946CD4B0081739C /* SceneDelegate.swift */; };
 		589175242946CD4B0081739C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175232946CD4B0081739C /* ViewController.swift */; };
-		589175272946CD4B0081739C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589175252946CD4B0081739C /* Main.storyboard */; };
 		589175292946CD4D0081739C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589175282946CD4D0081739C /* Assets.xcassets */; };
 		5891752C2946CD4D0081739C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5891752A2946CD4D0081739C /* LaunchScreen.storyboard */; };
 		589175402946D85F0081739C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891753C2946D85F0081739C /* API.swift */; };
@@ -23,7 +22,6 @@
 		5891751F2946CD4B0081739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589175212946CD4B0081739C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		589175232946CD4B0081739C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		589175262946CD4B0081739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		589175282946CD4D0081739C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5891752B2946CD4D0081739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5891752D2946CD4D0081739C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,12 +60,11 @@
 		5891751E2946CD4B0081739C /* star-wars-characters */ = {
 			isa = PBXGroup;
 			children = (
-				5891753D2946D85F0081739C /* Model */,
+				5891753D2946D85F0081739C /* Models */,
 				5891753B2946D85F0081739C /* Network */,
 				5891751F2946CD4B0081739C /* AppDelegate.swift */,
 				589175212946CD4B0081739C /* SceneDelegate.swift */,
 				589175232946CD4B0081739C /* ViewController.swift */,
-				589175252946CD4B0081739C /* Main.storyboard */,
 				589175282946CD4D0081739C /* Assets.xcassets */,
 				5891752A2946CD4D0081739C /* LaunchScreen.storyboard */,
 				5891752D2946CD4D0081739C /* Info.plist */,
@@ -83,13 +80,13 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		5891753D2946D85F0081739C /* Model */ = {
+		5891753D2946D85F0081739C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5891753E2946D85F0081739C /* Character.swift */,
 				5891753F2946D85F0081739C /* Result.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +149,6 @@
 			files = (
 				5891752C2946CD4D0081739C /* LaunchScreen.storyboard in Resources */,
 				589175292946CD4D0081739C /* Assets.xcassets in Resources */,
-				589175272946CD4B0081739C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		589175252946CD4B0081739C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				589175262946CD4B0081739C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5891752A2946CD4D0081739C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,7 +308,6 @@
 				INFOPLIST_FILE = "star-wars-characters/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,7 +335,6 @@
 				INFOPLIST_FILE = "star-wars-characters/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
