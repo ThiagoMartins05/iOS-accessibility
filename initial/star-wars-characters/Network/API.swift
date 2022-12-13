@@ -22,8 +22,8 @@ class API {
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             
-            guard error == nil else {
-                print(error?.localizedDescription)
+            if let error = error {
+                print(error.localizedDescription)
                 completion(nil)
                 return
             }
