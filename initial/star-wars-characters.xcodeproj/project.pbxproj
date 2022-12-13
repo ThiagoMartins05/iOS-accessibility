@@ -9,25 +9,33 @@
 /* Begin PBXBuildFile section */
 		589175202946CD4B0081739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891751F2946CD4B0081739C /* AppDelegate.swift */; };
 		589175222946CD4B0081739C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175212946CD4B0081739C /* SceneDelegate.swift */; };
-		589175242946CD4B0081739C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175232946CD4B0081739C /* ViewController.swift */; };
+		589175242946CD4B0081739C /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175232946CD4B0081739C /* CharactersViewController.swift */; };
 		589175292946CD4D0081739C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589175282946CD4D0081739C /* Assets.xcassets */; };
 		5891752C2946CD4D0081739C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5891752A2946CD4D0081739C /* LaunchScreen.storyboard */; };
 		589175402946D85F0081739C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891753C2946D85F0081739C /* API.swift */; };
 		589175412946D85F0081739C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891753E2946D85F0081739C /* Character.swift */; };
 		589175422946D85F0081739C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891753F2946D85F0081739C /* Result.swift */; };
+		58AFB9392948AFA6008EF3E9 /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB9382948AFA6008EF3E9 /* CharactersView.swift */; };
+		58AFB93B2948B175008EF3E9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93A2948B175008EF3E9 /* TableViewCell.swift */; };
+		58AFB93E2948B1D7008EF3E9 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93D2948B1D7008EF3E9 /* UILabel.swift */; };
+		58AFB9402948B2F6008EF3E9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5891751C2946CD4B0081739C /* star-wars-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "star-wars-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5891751F2946CD4B0081739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589175212946CD4B0081739C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		589175232946CD4B0081739C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		589175232946CD4B0081739C /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		589175282946CD4D0081739C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5891752B2946CD4D0081739C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5891752D2946CD4D0081739C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5891753C2946D85F0081739C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5891753E2946D85F0081739C /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5891753F2946D85F0081739C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		58AFB9382948AFA6008EF3E9 /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		58AFB93A2948B175008EF3E9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		58AFB93D2948B1D7008EF3E9 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +68,13 @@
 		5891751E2946CD4B0081739C /* star-wars-characters */ = {
 			isa = PBXGroup;
 			children = (
+				58AFB93C2948B1C8008EF3E9 /* Extensions */,
 				5891753D2946D85F0081739C /* Models */,
 				5891753B2946D85F0081739C /* Network */,
+				58AFB9372948AF88008EF3E9 /* Views */,
 				5891751F2946CD4B0081739C /* AppDelegate.swift */,
 				589175212946CD4B0081739C /* SceneDelegate.swift */,
-				589175232946CD4B0081739C /* ViewController.swift */,
+				589175232946CD4B0081739C /* CharactersViewController.swift */,
 				589175282946CD4D0081739C /* Assets.xcassets */,
 				5891752A2946CD4D0081739C /* LaunchScreen.storyboard */,
 				5891752D2946CD4D0081739C /* Info.plist */,
@@ -87,6 +97,24 @@
 				5891753F2946D85F0081739C /* Result.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58AFB9372948AF88008EF3E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58AFB9382948AFA6008EF3E9 /* CharactersView.swift */,
+				58AFB93A2948B175008EF3E9 /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58AFB93C2948B1C8008EF3E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58AFB93D2948B1D7008EF3E9 /* UILabel.swift */,
+				58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				589175422946D85F0081739C /* Result.swift in Sources */,
-				589175242946CD4B0081739C /* ViewController.swift in Sources */,
+				58AFB93B2948B175008EF3E9 /* TableViewCell.swift in Sources */,
+				589175242946CD4B0081739C /* CharactersViewController.swift in Sources */,
 				589175202946CD4B0081739C /* AppDelegate.swift in Sources */,
+				58AFB93E2948B1D7008EF3E9 /* UILabel.swift in Sources */,
 				589175412946D85F0081739C /* Character.swift in Sources */,
 				589175402946D85F0081739C /* API.swift in Sources */,
+				58AFB9402948B2F6008EF3E9 /* UIStackView.swift in Sources */,
+				58AFB9392948AFA6008EF3E9 /* CharactersView.swift in Sources */,
 				589175222946CD4B0081739C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
