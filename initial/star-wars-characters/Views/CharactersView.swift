@@ -13,11 +13,14 @@ class CharactersView: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: CharacterTableViewCell.identifier)
+        tableView.allowsSelection = false
+        tableView.showsVerticalScrollIndicator = false
         return tableView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
+        backgroundColor = .systemBackground
         addSubviews()
         addConstraints()
     }

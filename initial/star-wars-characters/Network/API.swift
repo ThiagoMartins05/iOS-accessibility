@@ -8,9 +8,9 @@
 import Foundation
 
 class API {
-    let url = URL(string: "https://swapi.dev/api/people/")
+    static var url = URL(string: "https://swapi.dev/api/people/")
     
-    public func getCharacters(completion: @escaping(_ characters: [Character]?) -> ()) {
+    public static func getCharacters(completion: @escaping(_ characters: [Character]?) -> ()) {
         guard let url = url
         else {
             completion(nil)

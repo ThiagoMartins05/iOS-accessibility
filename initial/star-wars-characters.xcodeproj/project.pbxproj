@@ -19,6 +19,7 @@
 		58AFB93B2948B175008EF3E9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93A2948B175008EF3E9 /* TableViewCell.swift */; };
 		58AFB93E2948B1D7008EF3E9 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93D2948B1D7008EF3E9 /* UILabel.swift */; };
 		58AFB9402948B2F6008EF3E9 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */; };
+		58AFB9442948BA35008EF3E9 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AFB9432948BA35008EF3E9 /* CharactersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		58AFB93A2948B175008EF3E9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		58AFB93D2948B1D7008EF3E9 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		58AFB9432948BA35008EF3E9 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,10 @@
 				5891753D2946D85F0081739C /* Models */,
 				5891753B2946D85F0081739C /* Network */,
 				58AFB9372948AF88008EF3E9 /* Views */,
+				58AFB9412948B740008EF3E9 /* ViewControllers */,
+				58AFB9422948B758008EF3E9 /* ViewModels */,
 				5891751F2946CD4B0081739C /* AppDelegate.swift */,
 				589175212946CD4B0081739C /* SceneDelegate.swift */,
-				589175232946CD4B0081739C /* CharactersViewController.swift */,
 				589175282946CD4D0081739C /* Assets.xcassets */,
 				5891752A2946CD4D0081739C /* LaunchScreen.storyboard */,
 				5891752D2946CD4D0081739C /* Info.plist */,
@@ -115,6 +118,22 @@
 				58AFB93F2948B2F6008EF3E9 /* UIStackView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58AFB9412948B740008EF3E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				589175232946CD4B0081739C /* CharactersViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		58AFB9422948B758008EF3E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				58AFB9432948BA35008EF3E9 /* CharactersViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AFB9442948BA35008EF3E9 /* CharactersViewModel.swift in Sources */,
 				589175422946D85F0081739C /* Result.swift in Sources */,
 				58AFB93B2948B175008EF3E9 /* TableViewCell.swift in Sources */,
 				589175242946CD4B0081739C /* CharactersViewController.swift in Sources */,

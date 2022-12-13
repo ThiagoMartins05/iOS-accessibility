@@ -14,17 +14,17 @@ class CharacterTableViewCell: UITableViewCell {
     private let nameTitleLabel: UILabel = .makeLabel(text: "Nome:")
     private let birthYearTitleLabel: UILabel = .makeLabel(text: "Ano de Nascimento:")
     private let heigtTitleLabel: UILabel = .makeLabel(text: "Altura:")
-    private let speciesTitleLabel: UILabel = .makeLabel(text: "Espécie:")
+    private let hairColorTitleLabel: UILabel = .makeLabel(text: "Cor do Cabelo:")
     
     private let nameLabel: UILabel = .makeLabel()
     private let birthYearLabel: UILabel = .makeLabel()
     private let heigtLabel: UILabel = .makeLabel()
-    private let speciesLabel: UILabel = .makeLabel()
+    private let hairColorLabel: UILabel = .makeLabel()
     
     private let nameStack: UIStackView = .makeStack()
     private let birthYearStack: UIStackView = .makeStack()
     private let heigtStack: UIStackView = .makeStack()
-    private let speciesStack: UIStackView = .makeStack()
+    private let hairColorStack: UIStackView = .makeStack()
     
     private let verticalStack: UIStackView = .makeStack(axis: .vertical)
     
@@ -44,7 +44,7 @@ class CharacterTableViewCell: UITableViewCell {
         verticalStack.addArrangedSubview(nameStack)
         verticalStack.addArrangedSubview(birthYearStack)
         verticalStack.addArrangedSubview(heigtStack)
-        verticalStack.addArrangedSubview(speciesStack)
+        verticalStack.addArrangedSubview(hairColorStack)
         
         nameStack.addArrangedSubview(nameTitleLabel)
         nameStack.addArrangedSubview(nameLabel)
@@ -55,8 +55,8 @@ class CharacterTableViewCell: UITableViewCell {
         heigtStack.addArrangedSubview(heigtTitleLabel)
         heigtStack.addArrangedSubview(heigtLabel)
         
-        speciesStack.addArrangedSubview(speciesTitleLabel)
-        speciesStack.addArrangedSubview(speciesLabel)
+        hairColorStack.addArrangedSubview(hairColorTitleLabel)
+        hairColorStack.addArrangedSubview(hairColorLabel)
     }
     
     private func addConstraints() {
@@ -66,5 +66,13 @@ class CharacterTableViewCell: UITableViewCell {
             verticalStack.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 16),
             verticalStack.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -16),
         ])
+    }
+    
+    func setup(with character: Character) {
+        let height = Decimal(string: character.height)
+        nameLabel.text = character.name
+        birthYearLabel.text = character.birthYear
+        heigtLabel.text = "\(height ?? 0 / 10) m"
+        hairColorLabel.text = character.hairColor
     }
 }

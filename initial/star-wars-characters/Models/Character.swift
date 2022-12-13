@@ -14,7 +14,7 @@ struct Character: Codable {
     let height: String
     let mass: String
     let films: [String]
-    let species: [String]
+    let hairColor: String
     
     enum CodingKeys: String, CodingKey {
         case name
@@ -23,6 +23,6 @@ struct Character: Codable {
         case height
         case mass
         case films
-        case species
+        case hairColor = "hair_color"
     }
 }
