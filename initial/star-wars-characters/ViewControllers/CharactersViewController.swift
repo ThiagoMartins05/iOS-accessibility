@@ -24,9 +24,15 @@ class CharactersViewController: UIViewController {
         view = CharactersView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        createSpinnerView()
+    }
+    
     private func getData() {
         viewModel.fetchData(completion: {
             DispatchQueue.main.async {
+                self.removeSpinnerView()
                 self.screenView?.tableView.reloadData()
             }
         })
@@ -45,5 +51,22 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setup(with: viewModel.characters[indexPath.row])
         
         return cell
+    }
+    
+    func createSpinnerView() {
+        let child = SpinnerViewController()
+
+        // add the spinner view controller
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
+    
+    func removeSpinnerView() {
+        let child = children.first(where: { $0 is SpinnerViewController})
+        child?.willMove(toParent: nil)
+        child?.view.removeFromSuperview()
+        child?.removeFromParent()
     }
 }
