@@ -10,6 +10,7 @@ import UIKit
 extension UIStackView {
     static func makeStack(axis: NSLayoutConstraint.Axis = .horizontal) -> UIStackView {
         let stack = UIStackView()
+        stack.distribution = .equalSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = axis
         return stack

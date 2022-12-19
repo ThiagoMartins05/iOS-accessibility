@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582394DE294FF64B009E50D8 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 582394DC294FF53B009E50D8 /* Starjedi.ttf */; };
+		582394DF294FF64E009E50D8 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 582394DD294FF53B009E50D8 /* Starjhol.ttf */; };
+		582394E1294FFBB2009E50D8 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582394E0294FFBB2009E50D8 /* SpinnerView.swift */; };
 		589175202946CD4B0081739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5891751F2946CD4B0081739C /* AppDelegate.swift */; };
 		589175222946CD4B0081739C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175212946CD4B0081739C /* SceneDelegate.swift */; };
 		589175242946CD4B0081739C /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589175232946CD4B0081739C /* CharactersViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582394DC294FF53B009E50D8 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		582394DD294FF53B009E50D8 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		582394E0294FFBB2009E50D8 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		5891751C2946CD4B0081739C /* star-wars-characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "star-wars-characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5891751F2946CD4B0081739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589175212946CD4B0081739C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582394DB294FF52C009E50D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				582394DC294FF53B009E50D8 /* Starjedi.ttf */,
+				582394DD294FF53B009E50D8 /* Starjhol.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		589175132946CD4B0081739C = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +85,7 @@
 		5891751E2946CD4B0081739C /* star-wars-characters */ = {
 			isa = PBXGroup;
 			children = (
+				582394DB294FF52C009E50D8 /* Fonts */,
 				58AFB93C2948B1C8008EF3E9 /* Extensions */,
 				5891753D2946D85F0081739C /* Models */,
 				5891753B2946D85F0081739C /* Network */,
@@ -107,6 +123,7 @@
 			children = (
 				58AFB9382948AFA6008EF3E9 /* CharactersView.swift */,
 				58AFB93A2948B175008EF3E9 /* TableViewCell.swift */,
+				582394E0294FFBB2009E50D8 /* SpinnerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5891752C2946CD4D0081739C /* LaunchScreen.storyboard in Resources */,
+				582394DE294FF64B009E50D8 /* Starjedi.ttf in Resources */,
 				589175292946CD4D0081739C /* Assets.xcassets in Resources */,
+				582394DF294FF64E009E50D8 /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +235,7 @@
 				589175402946D85F0081739C /* API.swift in Sources */,
 				58AFB9402948B2F6008EF3E9 /* UIStackView.swift in Sources */,
 				58AFB9392948AFA6008EF3E9 /* CharactersView.swift in Sources */,
+				582394E1294FFBB2009E50D8 /* SpinnerView.swift in Sources */,
 				589175222946CD4B0081739C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

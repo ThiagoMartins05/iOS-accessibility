@@ -11,10 +11,10 @@ class CharacterTableViewCell: UITableViewCell {
     
     public static let identifier = "CharacterTableViewCell"
     
-    private let nameTitleLabel: UILabel = .makeLabel(text: "Nome:")
-    private let birthYearTitleLabel: UILabel = .makeLabel(text: "Ano de Nascimento:")
-    private let heigtTitleLabel: UILabel = .makeLabel(text: "Altura:")
-    private let hairColorTitleLabel: UILabel = .makeLabel(text: "Cor do Cabelo:")
+    private let nameTitleLabel: UILabel = .makeTitleLabel(text: "Nome:")
+    private let birthYearTitleLabel: UILabel = .makeTitleLabel(text: "Ano de Nascimento:")
+    private let heigtTitleLabel: UILabel = .makeTitleLabel(text: "Altura:")
+    private let hairColorTitleLabel: UILabel = .makeTitleLabel(text: "Cor do Cabelo:")
     
     private let nameLabel: UILabel = .makeLabel()
     private let birthYearLabel: UILabel = .makeLabel()
@@ -72,7 +72,7 @@ class CharacterTableViewCell: UITableViewCell {
         let height = Decimal(string: character.height)
         nameLabel.text = character.name
         birthYearLabel.text = character.birthYear
-        heigtLabel.text = "\(height ?? 0 / 10) m"
+        heigtLabel.text = "\((height ?? 0) / 100) m"
         hairColorLabel.text = character.hairColor
     }
 }
