@@ -32,6 +32,7 @@ class CharacterTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
         addConstraints()
+        setupStacks()
     }
     
     required init?(coder: NSCoder) {
@@ -84,5 +85,25 @@ class CharacterTableViewCell: UITableViewCell {
         self.accessibilityValue = "Nome: \(character.name), ano de nascimento: \(character.birthYear), altura: \(height) metros, cor do cabelo: \(character.hairColor)"
         self.accessibilityHint = "Sem interação"
         self.accessibilityTraits = .none
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        setupStacks()
+    }
+    
+    private func setupStacks() {
+        let currentContentSize = self.traitCollection.preferredContentSizeCategory
+        
+        if currentContentSize > .accessibilityMedium {
+            nameStack.axis = .vertical
+            heigtStack.axis = .vertical
+            birthYearStack.axis = .vertical
+            hairColorStack.axis = .vertical
+        } else {
+            nameStack.axis = .horizontal
+            heigtStack.axis = .horizontal
+            birthYearStack.axis = .horizontal
+            hairColorStack.axis = .horizontal
+        }
     }
 }

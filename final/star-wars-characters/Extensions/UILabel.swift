@@ -14,6 +14,7 @@ extension UILabel {
         label.font = UIFont.preferredFont(forTextStyle: .body)
         label.adjustsFontForContentSizeCategory = true
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }
     
@@ -24,6 +25,7 @@ extension UILabel {
             label.adjustsFontForContentSizeCategory = true
         }
         label.text = text
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }
